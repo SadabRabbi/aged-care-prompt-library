@@ -178,7 +178,6 @@ Sunrise Gardens sends \~20 family letters/month (240/year) across all four types
 
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 6: Feedback and complaints*. Australian Government.
 * ACQSC. (2023). *Complaints about aged care: Annual report 2022–23*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Government. (2024). *Aged Care Act 2024 — Open disclosure obligations*.
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 
