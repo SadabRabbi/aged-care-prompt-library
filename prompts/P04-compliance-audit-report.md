@@ -179,7 +179,6 @@ Manual monthly report preparation takes **4–6 hours/month** (\~$3,480/year at 
 
 * ACQSC. (2019). *Aged Care Quality Standards*. Australian Government.
 * ACQSC. (2024). *Regulatory bulletin: Governance and accountability*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 
 \---
