@@ -183,7 +183,6 @@ Without a consolidated intake summary, care staff receive fragmented information
 ## References
 
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 1 and 3*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Government. (2024). *Aged Care Act 2024 — Rights-based approach*.
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 * Royal Commission into Aged Care Quality and Safety. (2021). *Final report* (Vol. 1).
