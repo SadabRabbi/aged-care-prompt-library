@@ -175,7 +175,6 @@ Manual self-assessment preparation takes \~**3 hours/Standard** (32 assessments/
 
 * ACQSC. (2019). *Aged Care Quality Standards*. Australian Government.
 * ACQSC. (2023). *Self-assessment guide for residential aged care*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 
 \---
