@@ -183,7 +183,6 @@ The Facility Manager spends **3–5 hours per submission** — at \~15 submissio
 * ACQSC. (2021). *How to submit a SIRS report*. Australian Government.
 * ACQSC. (2023). *Self-assessment guide for residential aged care*. Australian Government.
 * ACSQHC. (2020). *Incident management and open disclosure*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Government. (2024). *Aged Care Act 2024*.
 
 \---
