@@ -192,7 +192,6 @@ Manual policy drafting from scratch takes **6–10 hours** and typically require
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 8: Organisational governance*. Australian Government.
 * ACQSC. (2024). *Regulatory bulletin: Governance and accountability*. Australian Government.
 * ACQSC. (2025). *AI Transparency Statement*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Government. (2024). *Aged Care Act 2024*.
 * Australian Government Department of Industry, Science and Resources. (2024). *Voluntary AI Safety Standard 2024*.
 * Health Records Act 2001 (Vic).
