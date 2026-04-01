@@ -1,189 +1,130 @@
-# P05 · Quality standards self-assessment
-
-**Section:** 02 — Regulatory and compliance chain
-**Workflow step:** Step 2 of 3
-**Current version:** v1.2
-**Status:**Tested
-**Last updated:** March 2026
-
-\---
-
-## Prompt Text (v1.2 — current)
-
+P05 - Quality Standards Self-Assessment
+Section: Regulatory and Compliance Chain
+Workflow Step: 2 of 3
+Version: v1.2
+Status: Tested and Approved
+Last Updated: April 2026
+---
+01. Prompt Text
 ```
-You are the quality assurance specialist at Sunrise Gardens Aged Care, Bundoora Victoria.
+You are the quality assurance specialist at Sunrise Gardens Aged Care,
+Bundoora Victoria.
 
-Using ONLY the information provided below, conduct an evidence-based self-assessment against 
-the Aged Care Quality Standard identified, aligned with ACQSC assessment methodology.
+Using ONLY the information below, conduct an evidence-based self-assessment
+against the Aged Care Quality Standard identified. Align with the ACQSC
+self-assessment methodology (ACQSC, 2023).
 
 STANDARD BEING ASSESSED:
-- Standard: \[STANDARD NUMBER AND NAME]
-- Assessment trigger: \[REASON — e.g. flagged Non-Compliant in P04, scheduled quarterly review]
-- Assessment period: \[DATE RANGE]
+- Standard: [STANDARD NUMBER AND NAME]
+- Trigger: [REASON - e.g. flagged Non-Compliant in monthly audit, quarterly review]
+- Assessment period: [DATE RANGE]
 
 EVIDENCE PROVIDED:
-\[PASTE ALL AVAILABLE EVIDENCE — care plan data, incident records, training records,
-resident feedback, complaint records, policy documents. Source: P04 findings.]
+[PASTE ALL AVAILABLE EVIDENCE - care plan data, incident records, training logs,
+resident feedback, complaint records, policy documents reviewed]
 
-KNOWN GAPS OR CONCERNS:
-\[LIST KNOWN GAPS, COMPLAINTS, OR INCIDENTS RELEVANT TO THIS STANDARD]
+KNOWN GAPS:
+[LIST GAPS, COMPLAINTS, OR INCIDENTS RELEVANT TO THIS STANDARD - from P04]
 
-Write the self-assessment with:
-1. Standard overview (one sentence — what this standard requires)
-2. Current compliance rating: \[Compliant / Partially Compliant / Non-Compliant]
-   — justify with specific evidence cited from input (3–4 sentences)
-3. Evidence of compliance (what is working well)
-4. Identified gaps (what is missing — be direct, not diplomatic)
-5. Improvement action plan — for each action include:
-   - Action (specific and measurable)
-   - Responsible role
+Write a self-assessment with:
+1. Standard overview (one sentence - what it requires)
+2. Compliance rating: [Compliant / Partially Compliant / Non-Compliant]
+   Justify with specific data points from the evidence provided (3 to 4 sentences)
+3. Evidence of compliance (what is working)
+4. Identified gaps (what is missing - be direct)
+5. Improvement action plan - for each action include:
+   - Specific measurable description
+   - Responsible role (named)
    - Target completion date
    - Quality Standard reference
-   (minimum 3, maximum 5 SMART actions)
-6. Risk to residents if gaps not addressed (plain language — what could go wrong)
+   (minimum 3 actions, maximum 5)
+6. Risk to residents if gaps are not addressed (plain language)
 
 Rules:
 - Maximum 450 words
-- Evidence-based — cite specific data points from input
+- Cite specific data points in compliance rating justification
 - Do NOT rate compliance higher than the evidence supports
-- Flag overdue actions with \[OVERDUE]
-- Flag High resident safety risks with \[RESIDENT SAFETY RISK]
+- All improvement actions must be SMART
+- Flag overdue actions from previous assessments with [OVERDUE]
+- Flag High resident safety risks with [RESIDENT SAFETY RISK]
 ```
-
-**Placeholders to fill:**
-
-|Placeholder|Source|Example|
-|-|-|-|
-|`\[STANDARD]`|ACQSC Quality Standards|Standard 3 — Care and Services|
-|`\[REASON]`|P04 trigger|Flagged Partially Compliant in March 2026 audit|
-|`\[DATE RANGE]`|Assessment period|1 January 2026 – 31 March 2026|
-|`\[EVIDENCE]`|Clinical, training, survey records|38/62 care plans reviewed; 2 medication errors; satisfaction 74%; 12 staff dementia-trained|
-|`\[KNOWN GAPS]`|P04 findings|24 care plans overdue; 2 unresolved medication complaints|
-
-\---
-
-## Intended Workflow or Task
-
-* **Trigger:** \[NON-COMPLIANT ALERT] from P04, scheduled quarterly review, or ACQSC inspection notification
-* **Actor:** Facility Manager gathers evidence → AI drafts self-assessment → Clinical Governance Lead reviews → Action plan assigned
-* **Timing:** Within 5 business days of P04 non-compliant flag
-
+Placeholders:
+Placeholder	Source	Example
+[STANDARD]	ACQSC Quality Standards	Standard 3 - Care and Services
+[REASON]	P04 audit trigger	Flagged Partially Compliant in March 2026 monthly audit
+[DATE RANGE]	Assessment period	1 January to 31 March 2026
+[EVIDENCE]	Clinical records, training logs, surveys	38 of 62 care plans reviewed. 2 medication errors. Resident satisfaction 74%. 12 staff completed dementia training.
+[KNOWN GAPS]	P04 findings	24 care plans overdue. 2 unresolved medication complaints.
+---
+02. Intended Workflow or Task
+Trigger: [NON-COMPLIANT ALERT] from P04, scheduled quarterly review, or ACQSC inspection notification
+Actor: Facility Manager gathers evidence, AI drafts self-assessment, Clinical Governance Lead reviews and approves action plan
+Timing: Within 5 business days of a non-compliant flag
 ```
-\[NON-COMPLIANT ALERT] from P04 or scheduled review
-             ↓
-Facility Manager gathers evidence for flagged Standard
-             ↓
-\[P05 RUNS — self-assessment generated]
-             ↓
+[NON-COMPLIANT ALERT] from P04 or quarterly schedule
+              |
+Facility Manager gathers evidence for flagged standard
+              |
+P05 runs - self-assessment generated
+              |
 Clinical Governance Lead reviews and approves action plan
-             ↓
+              |
 Actions assigned with named responsible roles
-             ↓
-Findings filed for ACQSC inspection readiness
+              |
+Findings documented for ACQSC inspection readiness
 ```
-
-**Prompting technique:** RACE + SMART output constraints + resident safety reframing. Requiring 4 components per action (description, role, date, Standard reference) enforces SMART criteria at the prompt level. "Risk to residents" section reframes abstract compliance gaps in human terms — producing governance responses with greater operational urgency (Anthropic, 2025; ACQSC, 2023).
-
-\---
-
-## Problem Being Solved
-
-Manual self-assessment preparation takes \~**3 hours/Standard** (32 assessments/year = **96 hours = \~$5,568/year** at Facility Manager rate $58/hr). Providers unable to produce current, evidence-based assessments risk formal non-compliance notices publicly reported on ACQSC website (ACQSC, 2023).
-
-**Pain points addressed:**
-
-* Reduces preparation by \~55% (3 hrs → 80 min, saving \~$3,074/year)
-* Enforces SMART actions consistently across all 32 annual assessments
-* Produces inspection-ready documentation on demand
-
-\---
-
-## Automation Potential
-
-**Level: Medium**
-
-|Dimension|Assessment|
-|-|-|
-|Repetitiveness|Medium — 32 assessments/year (8 Standards × quarterly)|
-|Data availability|Medium — evidence gathered from multiple systems before prompting|
-|Human judgment needed|High — compliance rating confirmed by Clinical Governance Lead|
-|Integration possibility|Low-Medium — partial integration with quality management systems|
-|Estimated time saving|\~55% — 3 hrs → 80 min (\~$3,074/year)|
-
-**Human-in-the-loop role:** Facility Manager certifies evidence completeness before prompting. Reviews AI-generated compliance rating — challenges any that overstate evidence. Clinical Governance Lead approves action plan. Facility Manager accountable for accuracy of all assessments prepared for ACQSC inspection.
-
-\---
-
-## Risks and Limitations
-
-|Risk|Level|Mitigation|
-|-|-|-|
-|**Hallucination** — AI rates compliance higher than evidence supports; Facility Manager presents false assurance to ACQSC inspector|High|Rule: "Do NOT rate compliance higher than evidence supports." Clinical Governance Lead independently reviews each rating. Cross-referenced against ACQSC self-assessment guide.|
-|**Bias** — AI generates improvement actions assuming resourcing not available at Sunrise Gardens; unachievable action plan damages credibility with ACQSC|High|Facility Manager reviews all actions for resource feasibility. Unrealistic timelines adjusted before approval.|
-|**Privacy** — Evidence input may include identifiable resident complaint and staff training data|High|Data de-identified at individual level before prompting. Organisation-hosted AI only.|
-|**Governance** — Self-assessment becomes documentation exercise without genuine improvement follow-through|Medium|Clinical Governance Lead audits action completion monthly. Facility Manager reports progress to governing board quarterly.|
-|**Over-reliance** — Incomplete evidence input produces superficial assessment; gaps missed during ACQSC inspection|High|Evidence completeness checklist per Standard before prompting. Facility Manager certifies completeness.|
-
-**Overall risk rating: HIGH** — all compliance ratings and action plans must be reviewed by the Clinical Governance Lead before filing.
-
-\---
-
-## Version History
-
-### v1.0 — Initial draft
-
-**Date:** 24 March 2026
-**Prompt:** `Write a self-assessment for aged care quality standards.`
-**Output:** Generic checklist, all Standards rated Compliant, no evidence grounding. Unusable for ACQSC purposes.
-**Lesson learned:** Without evidence input and constrained ratings, AI defaults to optimistic Compliant assessments.
-
-\---
-
-### v1.1 — Added standard field, evidence input, ACQSC reference, rating constraints
-
-**Date:** 27 March 2026
-**Change:** Added specific standard, evidence input, ACQSC reference, three-option rating.
-**Output:** Evidence-grounded structure. However improvement actions were vague ("improve documentation") — no SMART criteria, no named roles, no Standard references. No resident safety risk framing.
-**Lesson learned:** SMART criteria must be enforced structurally — requiring 4 components per action is more effective than asking for "SMART goals" generically.
-
-\---
-
-### v1.2 — Added SMART enforcement, \[RESIDENT SAFETY RISK] flag, \[OVERDUE] flag Current
-
-**Date:** 31 March 2026
-**Change:** Added 4-component SMART action requirement. Added "Risk to residents" section with \[RESIDENT SAFETY RISK] flag. Added \[OVERDUE] flag.
-**Output:** Specific, evidence-grounded, inspection-ready assessments. All actions in test run rated SMART-compliant by Clinical Governance Lead. \[RESIDENT SAFETY RISK] correctly flagged care plan gap.
-**Lesson learned:** Resident safety reframing is the feature most cited by the Facility Manager as improving governing board responses — concrete human consequences create urgency that abstract compliance ratings do not.
-
-\---
-
-## A/B Test Results
-
-**Test date:** 31 March 2026 | **Sample:** 2 standards (Standards 3 and 7) | **Evaluators:** Facility Manager and Clinical Governance Lead
-
-|Criteria|v1.0|v1.2|
-|-|-|-|
-|Evidence-grounded compliance rating|0%|100%|
-|SMART actions (4 components each)|0%|100%|
-|Named responsible roles|0%|100%|
-|Quality Standard referenced per action|0%|100%|
-|\[RESIDENT SAFETY RISK] flag accurate|N/A|100%|
-
-\---
-
-## References
-
-* ACQSC. (2019). *Aged Care Quality Standards*. Australian Government.
-* ACQSC. (2023). *Self-assessment guide for residential aged care*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
-* Fair Work Commission. (2025). *SCHADS Award pay guide*.
-
-\---
-
-## Related Prompts
-
-* **Triggered by:** P04 — Compliance audit report (\[NON-COMPLIANT ALERT])
-* **Feeds into:** P06 — Regulatory submission draft (if ACQSC reporting required)
-* **Governed by:** P10 — AI risk governance policy
-* **Library index:** [README.md](../README.md)
-
+Prompting strategy: SMART output constraints combined with an evidence citation requirement and resident safety reframing. Five named action components enforce SMART criteria at the prompt level, preventing vague improvement language that ACQSC inspectors flag as inadequate (ACQSC, 2023). The risk to residents section reframes compliance gaps in human terms, producing more decisive governance responses (Anthropic, 2025).
+---
+03. Problem Being Solved
+Conducting a rigorous self-assessment manually takes approximately 3 hours per standard (ACQSC, 2023). With 8 standards assessed quarterly, this represents 96 hours per year. At Facility Manager rate of approximately $58 per hour, this represents approximately $5,568 per year (Fair Work Commission, 2025).
+Reduces assessment time by 55% (3 hours to 80 minutes per standard)
+SMART actions aligned to Quality Standards strengthen Standard 7 evidence
+Creates inspection-ready documentation available on demand
+---
+04. Automation Potential
+Level: Medium
+Dimension	Assessment
+Repetitiveness	Medium - 32 assessments per year (8 standards multiplied by 4 quarters)
+Data availability	Medium - evidence gathered from multiple systems before prompting
+Human judgment needed	High - compliance rating confirmed by Clinical Governance Lead
+Integration possibility	Low to Medium - partial integration with quality management systems possible
+Time saving estimate	55% reduction - 3 hours to 80 minutes per standard
+Annual cost saving estimate	Approximately $3,074 in Facility Manager time
+Human-in-the-loop: Facility Manager gathers and certifies evidence completeness. Reviews compliance rating and challenges any overstatement. Clinical Governance Lead approves action plan and assigns owners.
+---
+05. Risks and Limitations
+Risk	Level	Mitigation
+Hallucination: AI rates compliance higher than evidence supports, providing false assurance to the ACQSC	High	Explicit rule that compliance cannot be rated higher than evidence supports. Clinical Governance Lead independently reviews rating before filing.
+Bias: AI generates SMART actions assuming staffing or funding levels unavailable at Sunrise Gardens	High	Facility Manager reviews all actions for resource feasibility before approval.
+Privacy: Evidence input may include identifiable resident complaint data and staff training records	High	Evidence de-identified at individual level before prompting. Organisation-hosted AI only.
+Governance: Self-assessment becomes a documentation exercise without genuine improvement follow-through	Medium	Clinical Governance Lead audits action completion monthly. Facility Manager reports progress to governing board quarterly.
+Over-reliance: Incomplete evidence produces a superficial assessment and genuine gaps are missed	High	Evidence completeness checklist required. Facility Manager certifies completeness before running.
+Overall risk rating: High
+---
+Iteration Log
+Version	Change Made	Output	Lesson Learned
+v1.0	Basic instruction, no evidence input, no rating constraints	All standards rated Compliant with no evidence, unusable	Without evidence input, AI defaults to optimistic assessments
+v1.1	Added specific standard field, evidence input, ACQSC reference, rating constraints	Evidence-grounded but improvement actions vague with no SMART criteria or Standards references	SMART criteria must be enforced at the structural level, not requested in general
+v1.2	Added five-component SMART requirement, resident safety reframing, [OVERDUE] and [RESIDENT SAFETY RISK] flags	Specific, inspection-ready assessment with measurable actions and named accountability	Resident safety reframing creates urgency that abstract compliance ratings do not
+---
+A/B Test Results
+Test date: 31 March 2026 | Sample: 2 standard assessments (Standards 3 and 7) | Evaluators: Facility Manager and Clinical Governance Lead
+Criteria	v1.0	v1.2
+Evidence-grounded compliance rating	0%	100%
+SMART actions produced	0%	100%
+Named responsible roles in all actions	0%	100%
+Quality Standard referenced in each action	0%	100%
+[RESIDENT SAFETY RISK] flag accurate	N/A	100%
+---
+References
+ACQSC. (2019). Aged Care Quality Standards. Australian Government.
+ACQSC. (2023). Self-assessment guide for residential aged care. Australian Government.
+Anthropic. (2025). Prompt engineering overview. https://docs.claude.ai
+Fair Work Commission. (2025). SCHADS Award pay guide. Australian Government.
+Royal Commission into Aged Care Quality and Safety. (2021). Final report (Vol. 1). Australian Government.
+---
+Related Prompts
+Triggered by: P04 ([NON-COMPLIANT ALERT])
+Feeds into: P06
+Governed by: P10 - AI Risk Governance Policy
+Library index: README.md
