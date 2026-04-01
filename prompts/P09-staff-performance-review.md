@@ -189,7 +189,6 @@ With 48 staff reviewed 6-monthly, Sunrise Gardens generates **96 performance rev
 ## References
 
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 7: Human resources*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Human Rights Commission. (2023). *Employer guide to anti-discrimination law*. Australian Government.
 * Fair Work Act 2009 (Cth). *Unfair dismissal and general protections.*
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
