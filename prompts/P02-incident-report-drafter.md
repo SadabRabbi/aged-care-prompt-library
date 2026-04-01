@@ -182,7 +182,6 @@ Under SIRS 2021, the Facility Manager must submit Priority 1 reports within **24
 
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 8*. Australian Government.
 * ACQSC. (2021). *Serious Incident Response Scheme (SIRS)*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Australian Government. (2024). *Aged Care Act 2024*.
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 
