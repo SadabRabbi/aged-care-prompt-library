@@ -179,7 +179,6 @@ Communication failures during handover contribute to \~24% of adverse events in 
 * ACQSC. (2019). *Aged Care Quality Standards — Standard 3*. Australian Government.
 * ACQSC. (2021). *Serious Incident Response Scheme (SIRS)*. Australian Government.
 * ACSQHC. (2020). *ISBAR — Communicating for safety*. Australian Government.
-* Anthropic. (2025). *Prompt engineering overview*. docs.claude.ai
 * Fair Work Commission. (2025). *SCHADS Award pay guide*.
 
 \---
